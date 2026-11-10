@@ -6,9 +6,9 @@
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "postCreateCommand": "pip install --user pytest requests && if [ -f projects/devops/01-python-docker-ci/requirements.txt ]; then pip install --user -r projects/devops/01-python-docker-ci/requirements.txt; fi",
-  "forwardPorts": [5000],
+  "forwardPorts": [8080],
   "portsAttributes": {
-    "5000": { "label": "Demo app", "onAutoForward": "notify" }
+    "8080": { "label": "Wordsmith web", "onAutoForward": "notify" }
   },
   "customizations": {
     "vscode": {
